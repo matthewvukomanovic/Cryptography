@@ -12,7 +12,7 @@ rem verify whether the version of MSBuild that we need is installed
 if not exist %MSBUILD_EXE% goto msbuild_missing
 
 rem launch the build script
-call %MSBUILD_HOME%\msbuild.exe %MSBUILD_PROJECT% /verbosity:minimal /nologo
+call %MSBUILD_EXE% %MSBUILD_PROJECT% /verbosity:minimal /nologo
 if errorlevel 1 goto msbuild_failure
 goto :EOF
 
