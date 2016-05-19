@@ -2,6 +2,7 @@
 
 rem We use the version of MSBuild that is included in .NET 4.0 / 4.5
 set MSBUILD_HOME=%WINDIR%\Microsoft.NET\Framework\v4.0.30319
+set MSBUILD_HOME=%ProgramFiles(x86)%\MSBuild\14.0\bin
 
 rem MSBuild project file is located in the same directory as the current script
 set MSBUILD_PROJECT=%~dp0\build.proj
